@@ -10,7 +10,10 @@ export default function Header() {
           </a>
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 text-white hover:text-gray-900">Profile</a>
+            <a className="mr-5 text-white hover:text-gray-900">HOME</a>
+            <a className="mr-5 text-white hover:text-gray-900">ABOUT</a>
+            <a className="mr-5 text-white hover:text-gray-900">BLOG</a>
+            <a className="mr-5 text-white hover:text-gray-900">CONTACT</a>
         </nav>
       </div>
     </header>
