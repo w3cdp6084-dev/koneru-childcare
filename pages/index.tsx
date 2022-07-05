@@ -33,7 +33,7 @@ export default function Home({ articles }: Props) {
   )
 }
 export const getServerSideProps = async () => {
-  const data = await client.get({ endpoint: 'articles' });
+  const data = await client.get({ endpoint: 'articles',queries: { limit: 4, offset: 0}});
 
   return {
     props: {
