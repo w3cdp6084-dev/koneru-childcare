@@ -19,11 +19,14 @@ export default function Home({ articles }: Props) {
             src={article.eye_catch.url}
             alt="Sunset in the mountains"
           />
-          <Moment format="YYYY/MM/DD">
-              {article.publishedAt}
-          </Moment>
-          <div className="p-3 py-3">{article.title}</div>
-          <div className="p-3 ">
+          <div className='flex justify-between items-center pt-3 px-3'>
+          <div className='category py-1 px-2.5 text-white rounded-md'>{article.category.name}</div>
+            <Moment format="YYYY/MM/DD" className='text-xs font-bold date'>
+                {article.publishedAt}
+            </Moment>
+          </div>
+          <div className="pt-4 px-3">{article.title}</div>
+          <div className="px-3 pb-3">
           {article.tag && (
             <span className="inline-block rounded-full text-sm font-semibold card-tag mr-2">
               #{article.tag}

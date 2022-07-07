@@ -12,4 +12,7 @@ export type Article = {
       width: number
     }
     tag: string
+     category: {
+      name: string
+    }
   }
