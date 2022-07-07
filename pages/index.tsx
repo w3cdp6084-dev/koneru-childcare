@@ -1,5 +1,6 @@
 import { client } from '../libs/client';
 import type { Article } from '../types/article';
+import Moment from 'react-moment'
 type Props = {
   articles: Array<Article>;
 };
@@ -18,6 +19,9 @@ export default function Home({ articles }: Props) {
             src={article.eye_catch.url}
             alt="Sunset in the mountains"
           />
+          <Moment format="YYYY/MM/DD">
+              {article.publishedAt}
+          </Moment>
           <div className="p-3 py-3">{article.title}</div>
           <div className="p-3 ">
           {article.tag && (
