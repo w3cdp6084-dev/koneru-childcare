@@ -1,7 +1,7 @@
 export default function Custom404() {
     return (
       <main className="main">
-        <p>ページがありません。</p>
+        <p>ページがありません🐱</p>
       </main>
     );
   }

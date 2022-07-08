@@ -1,7 +1,7 @@
 import { GetServerSideProps } from 'next';
 import type { Article } from '../../types/article';
 import { client } from '../../libs/client';
-
+import Moment from 'react-moment'
 type Props = {
   article: Article;
 };
@@ -11,6 +11,9 @@ export default function Article({ article }: Props) {
     <div className="bg-gray-50">
       <div className="px-10 py-6 mx-auto">
         <div className="max-w-6xl px-10 py-6 mx-auto bg-gray-50">
+            <Moment format="YYYY/MM/DD" className='text-xs font-bold date'>
+                {article.publishedAt}
+            </Moment>
           <img
             className="object-cover w-full shadow-sm h-full"
             src={article.eye_catch.url}
