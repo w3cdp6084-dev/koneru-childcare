@@ -8,14 +8,14 @@ type Props = {
 export default function Home({ articles }: Props) {
   return (
     <>
-      <h1 className="container mx-auto px-10 pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-2xl font-bold">
+      <h1 className="block-title container mx-auto px-10 pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-2xl font-bold">
       Sleep record
       </h1>
       <div className="container mx-auto p-3 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-5">
       {articles.map(article => (
         <div className="rounded-xl overflow-hidden shadow-lg" key={article.id}>
           <img
-            className="w-full"
+            className="w-full h-2/6"
             src={article.eye_catch.url}
             alt="Sunset in the mountains"
           />
@@ -25,7 +25,7 @@ export default function Home({ articles }: Props) {
                 {article.publishedAt}
             </Moment>
           </div>
-          <div className="pt-4 px-3">{article.title}</div>
+          <div className="card-title pt-4 px-3 pb-6 font-bold line-clamp-5">{article.title}</div>
           <div className="px-3 pb-3">
           {article.tag && (
             <span className="inline-block rounded-full text-sm font-semibold card-tag mr-2">

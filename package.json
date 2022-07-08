@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.0",
     "microcms-js-sdk": "^2.0.0",
     "next": "latest",
     "react": "18.1.0",

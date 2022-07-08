@@ -10,10 +10,10 @@ export default function Header() {
           </a>
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a className="font-bold mr-6 text-black tracking-wide">HOME</a>
-            <a className="font-bold mr-6 text-black tracking-wide">ABOUT</a>
-            <a className="font-bold mr-6 text-black tracking-wide">BLOG</a>
-            <a className="font-bold mr-6 text-black tracking-wide">CONTACT</a>
+            <a className="items font-bold mr-6 text-black tracking-wide">HOME</a>
+            <a className="items font-bold mr-6 text-black tracking-wide">ABOUT</a>
+            <a className="items font-bold mr-6 text-black tracking-wide">BLOG</a>
+            <a className="items font-bold mr-6 text-black tracking-wide">CONTACT</a>
         </nav>
       </div>
     </header>
