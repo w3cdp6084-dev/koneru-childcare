@@ -16,7 +16,7 @@ export default function Home({ articles }: Props) {
       {articles.map(article => (
         <div className="rounded-xl overflow-hidden shadow-lg" key={article.id}>
           <img
-            className="w-full h-2/6"
+            className="w-full"
             src={article.eye_catch.url}
             alt="Sunset in the mountains"
           />
