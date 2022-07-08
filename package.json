@@ -7,8 +7,10 @@
   },
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.0",
+    "iconoir-react": "^5.1.4",
     "microcms-js-sdk": "^2.0.0",
     "next": "latest",
+    "next-themes": "^0.2.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-moment": "^1.1.2"
