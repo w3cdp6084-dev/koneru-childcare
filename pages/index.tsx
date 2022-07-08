@@ -1,6 +1,7 @@
 import { client } from '../libs/client';
 import type { Article } from '../types/article';
 import Moment from 'react-moment'
+import Link from 'next/link';
 type Props = {
   articles: Array<Article>;
 };
@@ -25,7 +26,11 @@ export default function Home({ articles }: Props) {
                 {article.publishedAt}
             </Moment>
           </div>
-          <div className="card-title pt-4 px-3 pb-6 font-bold line-clamp-5">{article.title}</div>
+          <div className="card-title pt-4 px-3 pb-6 font-bold line-clamp-5">
+             <Link href={`/article/${article.id}`} passHref>
+               <a>{article.title}</a>
+             </Link>
+           </div>
           <div className="px-3 pb-3">
           {article.tag && (
             <span className="inline-block rounded-full text-sm font-semibold card-tag mr-2">
