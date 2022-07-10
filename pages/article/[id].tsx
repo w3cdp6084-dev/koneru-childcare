@@ -8,9 +8,9 @@ type Props = {
 
 export default function Article({ article }: Props) {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 dark:bg-gray-800">
       <div className="px-10 py-6 mx-auto">
-        <div className="max-w-6xl px-10 py-6 mx-auto bg-gray-50">
+        <div className="max-w-6xl px-10 py-6 mx-auto">
             <Moment format="YYYY/MM/DD" className='text-xs font-bold date'>
                 {article.publishedAt}
             </Moment>
