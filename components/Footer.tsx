@@ -10,10 +10,10 @@ export default function Footer() {
             </a>
           </Link>
           <nav className="dark:text-white md:ml-auto flex flex-wrap items-center text-base justify-center">
-              <a className="mr-5 hover:text-gray-900">Twitter</a>
-              <a className="mr-5 hover:text-gray-900">Facebook</a>
-              <a className="mr-5 hover:text-gray-900">Dribbble</a>
-              <a className="mr-5 hover:text-gray-900">GitHub</a>
+            <Link href={'https://twitter.com/w3cdp6084w3cdp'}><a className="mr-5 hover:text-gray-900" target={"_blank"}>Twitter</a></Link>
+            <Link href={'https://www.facebook.com/w3cdpmori'}><a className="mr-5 hover:text-gray-900" target={"_blank"}>Facebook</a></Link>
+            <Link href={'https://dribbble.com/w3cdp6084'}><a className="mr-5 hover:text-gray-900" target={"_blank"}>Dribbble</a></Link>
+            <Link href={'https://github.com/w3cdp6084-dev'}><a className="mr-5 hover:text-gray-900" target={"_blank"}>GitHub</a></Link>
           </nav>
         </div>
       </footer>
