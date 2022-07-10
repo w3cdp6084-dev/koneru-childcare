@@ -9,7 +9,7 @@ type Props = {
 export default function Home({ articles }: Props) {
   return (
     <>
-      <h1 className="block-title container mx-auto px-10 pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-2xl font-bold">
+      <h1 className="dark:text-white block-title container mx-auto px-10 pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-2xl font-bold">
       Sleep record
       </h1>
       <div className="container mx-auto p-3 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-5">
@@ -23,11 +23,11 @@ export default function Home({ articles }: Props) {
             />
             <div className='flex justify-between items-center pt-3 px-3'>
             <div className='category py-1 px-2.5 text-white rounded-md'>{article.category.name}</div>
-              <Moment format="YYYY/MM/DD" className='text-xs font-bold date'>
+              <Moment format="YYYY/MM/DD" className='text-xs font-bold date dark:text-white '>
                   {article.publishedAt}
               </Moment>
             </div>
-            <div className="card-title pt-4 px-3 pb-6 font-bold line-clamp-5">
+            <div className="dark:text-white card-title pt-4 px-3 pb-6 font-bold line-clamp-5">
                 <p>{article.title}</p>
             </div>
             <div className="px-3 pb-3">
