@@ -17,7 +17,7 @@ export default function Header() {
             <a className="dark:text-white items font-bold mr-6 tracking-wide">BLOG</a>
             <a className="dark:text-white items font-bold mr-6 tracking-wide">CONTACT</a>
         </nav>
-        <span className="group inline-flex items-center text-xl font-medium pl-2 pr-3 py-2">
+        <span className="dark:text-white group inline-flex items-center text-xl font-medium pl-2 pr-3 py-2">
           <ChangeThemeButton />
         </span>
       </div>
