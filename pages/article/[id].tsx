@@ -31,8 +31,8 @@ export default function Article({ article }: Props) {
             </div>
           )}
           <div className="mt-2">
-            <div className="text-2xl text-gray-700 mt-4 rounded ">
-              {article.body}
+            <div className="text-2xl text-gray-700 mt-4">
+              {article.content}
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ export type Article = {
     publishedAt: string
     revisedAt: string
     title: string
-    body: string
+    content: string
     eye_catch: {
       url: string
       height: number
