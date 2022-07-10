@@ -12,10 +12,10 @@ export default function Header() {
           </a>
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a className="items font-bold mr-6 text-black tracking-wide">HOME</a>
-            <a className="items font-bold mr-6 text-black tracking-wide">ABOUT</a>
-            <a className="items font-bold mr-6 text-black tracking-wide">BLOG</a>
-            <a className="items font-bold mr-6 text-black tracking-wide">CONTACT</a>
+            <a className="dark:text-white items font-bold mr-6 tracking-wide">HOME</a>
+            <a className="dark:text-white items font-bold mr-6 tracking-wide">ABOUT</a>
+            <a className="dark:text-white items font-bold mr-6 tracking-wide">BLOG</a>
+            <a className="dark:text-white items font-bold mr-6 tracking-wide">CONTACT</a>
         </nav>
         <span className="group inline-flex items-center text-xl font-medium pl-2 pr-3 py-2">
           <ChangeThemeButton />
