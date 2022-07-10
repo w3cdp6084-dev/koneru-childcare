@@ -12,8 +12,8 @@ export default function Header() {
           </a>
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a className="dark:text-white items font-bold mr-6 tracking-wide">HOME</a>
-            <a className="dark:text-white items font-bold mr-6 tracking-wide">ABOUT</a>
+          <Link href={'/'} passHref><a className="dark:text-white items font-bold mr-6 tracking-wide">HOME</a></Link>
+          <Link href={'/about'} passHref><a className="dark:text-white items font-bold mr-6 tracking-wide">ABOUT</a></Link>
             <a className="dark:text-white items font-bold mr-6 tracking-wide">BLOG</a>
             <a className="dark:text-white items font-bold mr-6 tracking-wide">CONTACT</a>
         </nav>
