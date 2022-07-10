@@ -14,7 +14,7 @@ export default function Header() {
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
           <Link href={'/'} passHref><a className="dark:text-white items font-bold mr-6 tracking-wide">HOME</a></Link>
           <Link href={'/about'} passHref><a className="dark:text-white items font-bold mr-6 tracking-wide">ABOUT</a></Link>
-            <a className="dark:text-white items font-bold mr-6 tracking-wide">BLOG</a>
+          <Link href={'/list'} passHref><a className="dark:text-white items font-bold mr-6 tracking-wide">BLOG</a></Link>
             <a className="dark:text-white items font-bold mr-6 tracking-wide">CONTACT</a>
         </nav>
         <span className="dark:text-white group inline-flex items-center text-xl font-medium pl-2 pr-3 py-2">
