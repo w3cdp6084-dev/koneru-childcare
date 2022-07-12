@@ -15,7 +15,7 @@ export default function Home({ articles }: Props) {
       <div className="container mx-auto p-3 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-5">
       {articles.map(article => (
         <Link href={`/article/${article.id}`} passHref>
-          <div className="rounded-xl overflow-hidden shadow-lg" key={article.id}>
+          <div className="dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg" key={article.id}>
             <img
               className="w-full"
               src={article.eye_catch.url}
@@ -48,7 +48,7 @@ export default function Home({ articles }: Props) {
       <div className="container mx-auto p-3 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-5">
       {articles.map(article => (
         <Link href={`/article/${article.id}`} passHref>
-          <div className="rounded-xl overflow-hidden shadow-lg" key={article.id}>
+          <div className="dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg" key={article.id}>
             <img
               className="w-full"
               src={article.eye_catch.url}
