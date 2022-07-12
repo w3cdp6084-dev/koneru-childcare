@@ -15,11 +15,11 @@ export default function Article({ article }: Props) {
                 {article.publishedAt}
             </Moment>
           <img
-            className="object-cover w-full shadow-sm h-full"
+            className="rounded-2xl object-cover w-full shadow-sm h-full"
             src={article.eye_catch.url}
           />
           <div className="mt-2">
-            <div className="sm:text-3xl md:text-3xl lg:text-3xl xl:text-4xl font-bold text-blue-500">
+            <div className="dark:text-white font-bold text-3xl text-black">
               {article.title}
             </div>
           </div>
@@ -31,7 +31,7 @@ export default function Article({ article }: Props) {
             </div>
           )}
           <div className="mt-2">
-            <div className="text-2xl text-gray-700 mt-4">
+            <div className="dark:text-white text-2xl text-gray-700 mt-4">
               {article.content}
             </div>
           </div>
