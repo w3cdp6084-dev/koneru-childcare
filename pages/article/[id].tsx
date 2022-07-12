@@ -31,9 +31,7 @@ export default function Article({ article }: Props) {
             </div>
           )}
           <div className="mt-2">
-            <div className="dark:text-white text-2xl text-gray-700 mt-4">
-              {article.content}
-            </div>
+            <div dangerouslySetInnerHTML={{ __html: article.content }} />
           </div>
         </div>
       </div>
