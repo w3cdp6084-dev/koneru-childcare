@@ -1,41 +1,19 @@
-import Link from 'next/link';
+import Image from 'next/image'
+
 export default function About() {
     return (
-      <main className="main">
-        <h2>ABOUT</h2>
+      <main className="mt-20 main-img text-center px-10 py-6 mx-auto">
         <section>
-            <h3>Me</h3>
             <div>
-                <img src="" alt="" />
-                <p>
-                    KONEKONE <br />
-                    @YUSUKEMORI
+                <Image src="/images/logo.png" width={150} height={150} alt="logo" />
+                <p className='dark:text-white mt-10 mb-4 text-2xl text-black font-bold'>KONEKONE</p>
+                <p className='dark:text-white font-bold text-black'>Yusuke Mori<br />
+                Designer/Developer</p>
+                <p className='dark:text-white mt-10 text-black'>
+                KONEKONEという屋号で、デザイナーとフロントエンドをやってます。<br />
+ブランディングとコンセプトメイクの設計を大切にし、モノづくりをおこなっています。<br />
+今年子供が生まれ、育児に楽しく取り組んでおり、こちらはそのnoteにもなっています。
                 </p>
-            </div>
-            <div>
-                <p>
-                    自己紹介 1
-                </p>
-                <p>
-                    自己紹介 2
-                </p>
-                <p>
-                    自己紹介 3
-                </p>
-            </div>
-            <div>
-                <h3>Skill</h3>
-            </div>
-            <div>
-                <h3>Career</h3>
-            </div>
-            <div>
-                <ul>
-                    <Link href={'https://twitter.com/w3cdp6084w3cdp'}><a className="mr-5 hover:text-gray-900" target={"_blank"}>Twitter</a></Link>
-                    <Link href={'https://www.facebook.com/w3cdpmori'}><a className="mr-5 hover:text-gray-900" target={"_blank"}>Facebook</a></Link>
-                    <Link href={'https://dribbble.com/w3cdp6084'}><a className="mr-5 hover:text-gray-900" target={"_blank"}>Dribbble</a></Link>
-                    <Link href={'https://github.com/w3cdp6084-dev'}><a className="mr-5 hover:text-gray-900" target={"_blank"}>GitHub</a></Link>
-                </ul>
             </div>
         </section>
       </main>
