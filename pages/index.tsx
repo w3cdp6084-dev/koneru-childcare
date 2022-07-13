@@ -9,10 +9,10 @@ type Props = {
 export default function Home({ articles }: Props) {
   return (
     <>
-      <h1 className="dark:text-white block-title container mx-auto px-10 pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-2xl font-bold">
+      <h1 className="dark:text-white block-title container mx-auto pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-2xl font-bold">
       Sleep record
       </h1>
-      <div className="container mx-auto p-3 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-5">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-5">
       {articles.map(article => (
         <Link href={`/article/${article.id}`} passHref>
           <div className="dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg" key={article.id}>
@@ -42,10 +42,10 @@ export default function Home({ articles }: Props) {
         ))}
       </div>
     <section>
-      <h1 className="block-title container mx-auto px-10 pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-2xl font-bold">
+      <h1 className="block-title container mx-auto pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-2xl font-bold">
       Excrement record
       </h1>
-      <div className="container mx-auto p-3 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-5">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-5">
       {articles.map(article => (
         <Link href={`/article/${article.id}`} passHref>
           <div className="dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg" key={article.id}>
