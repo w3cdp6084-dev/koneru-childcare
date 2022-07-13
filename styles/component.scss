@@ -36,3 +36,16 @@ html{
     max-width: 55rem;
 }
 // Footer
+.footer{
+    background-color: #FC563F;
+    max-width: 100%;
+}
+.container{
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+.logo-wrap,.links,.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
