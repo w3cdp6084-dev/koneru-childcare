@@ -1,7 +1,13 @@
 html{
     font-family: Futura;
 }
-
+body{
+    position: relative;
+}
+.wrap {
+    min-height: 100vh;
+    position: relative;
+}
 
 // header style
 .header{
@@ -38,7 +44,10 @@ html{
 // Footer
 .footer{
     background-color: #FC563F;
-    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
 }
 .container{
     padding-top: 2.5rem;
@@ -48,4 +57,10 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+// 404
+.u-title-404{
+    font-size: 12.5rem;
+    color: #505050;
 }

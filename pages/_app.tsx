@@ -8,13 +8,13 @@ import { ThemeProvider } from 'next-themes';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div className='wrap'>
       <ThemeProvider attribute="class" defaultTheme="light">
         <Header />
         <Component {...pageProps} />
         <Footer />  
       </ThemeProvider>
-    </>
+    </div>
   );
 }
 
