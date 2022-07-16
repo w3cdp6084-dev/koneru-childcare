@@ -9,10 +9,11 @@ export default function About() {
                 <p className='dark:text-white mt-10 mb-4 text-2xl text-black font-bold'>KONEKONE</p>
                 <p className='dark:text-white font-bold text-black'>Yusuke Mori<br />
                 Designer/Developer</p>
-                <p className='dark:text-white mt-10 text-black'>
+                <p className='dark:text-white mt-10 mb-10 text-black'>
                 KONEKONEという屋号で、デザイナーとフロントエンドをやってます。<br />
-ブランディングとコンセプトメイクの設計を大切にし、モノづくりをおこなっています。<br />
-今年子供が生まれ、育児に楽しく取り組んでおり、こちらはそのnoteにもなっています。
+ブランディング/コンセプトメイクの設計を大切にし、モノづくりをおこなっています。<br />
+今年子供が生まれ、育児に楽しく取り組んでおり、こちらはそのnoteにもなっています。<br /><br />
+少しでも参考になれば幸いです🐱
                 </p>
             </div>
         </section>
