@@ -15,7 +15,7 @@ export default function Article({ article }: Props) {
         <div className='flex items-center justify-between'>
           {article.tag && (
               <div className="flex items-center justify-start mt-4 mb-4">
-                <div className="px-2 py-1 font-bold bg-red-400 text-white rounded-lg">
+                <div className="px-2 py-1 bg-red-400 text-white rounded-lg text-xs">
                   #{article.tag}
                 </div>
               </div>
