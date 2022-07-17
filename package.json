@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.0",
+    "cheerio": "^1.0.0-rc.12",
     "iconoir-react": "^5.1.4",
     "microcms-js-sdk": "^2.0.0",
     "next": "latest",
