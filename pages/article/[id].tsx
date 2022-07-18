@@ -2,11 +2,14 @@ import { GetServerSideProps } from 'next';
 import type { Article } from '../../types/article';
 import { client } from '../../libs/client';
 import Moment from 'react-moment'
+import { renderToc } from '../../libs/render-toc'; 
+import { TableOfContents } from '../../components/TableOfContent';
 type Props = {
   article: Article;
 };
 
 export default function Article({ article }: Props) {
+  const toc = renderToc(article.content);
   return (
     <div>
       <div className="px-10 py-6 mx-auto">
@@ -33,7 +36,7 @@ export default function Article({ article }: Props) {
               {article.title}
             </div>
           </div>
-
+          <TableOfContents toc={toc} />
           <div className="mt-2">
             <div dangerouslySetInnerHTML={{ __html: article.content }} />
           </div>
