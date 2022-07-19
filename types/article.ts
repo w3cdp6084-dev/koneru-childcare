@@ -15,4 +15,5 @@ export type Article = {
      category: {
       name: string
     }
+    toc_visible: string
   }

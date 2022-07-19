@@ -36,7 +36,9 @@ export default function Article({ article }: Props) {
               {article.title}
             </div>
           </div>
+          {article.toc_visible && (
           <TableOfContents toc={toc} />
+          )}
           <div className="mt-2">
             <div dangerouslySetInnerHTML={{ __html: article.content }} />
           </div>
