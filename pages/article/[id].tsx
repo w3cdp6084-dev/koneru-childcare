@@ -4,6 +4,7 @@ import { client } from '../../libs/client';
 import Moment from 'react-moment'
 import { renderToc } from '../../libs/render-toc'; 
 import { TableOfContents } from '../../components/TableOfContent';
+import ReturnTopButton from '../../components/ReturnTopButton';
 type Props = {
   article: Article;
 };
@@ -44,6 +45,7 @@ export default function Article({ article }: Props) {
           </div>
         </div>
       </div>
+      <ReturnTopButton />
     </div>
   );
 }
