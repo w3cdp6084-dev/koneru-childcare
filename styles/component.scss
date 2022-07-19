@@ -64,3 +64,20 @@ body{
     font-size: 12.5rem;
     color: #505050;
 }
+
+// top-
+.top-button{
+    position: fixed;
+    right: 10%;
+    bottom: 32%;
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+        width: 2.0rem;
+    }
+}

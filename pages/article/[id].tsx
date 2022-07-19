@@ -13,7 +13,7 @@ export default function Article({ article }: Props) {
   const toc = renderToc(article.content);
   return (
     <div>
-      <div className="px-10 py-6 mx-auto">
+      <div className="px-10 py-6 mx-auto relative">
 
         <div className="main-img max-w-6xl px-10 py-6 mx-auto">
         <div className='flex items-center justify-between'>
@@ -44,8 +44,9 @@ export default function Article({ article }: Props) {
             <div dangerouslySetInnerHTML={{ __html: article.content }} />
           </div>
         </div>
+          <ReturnTopButton />
       </div>
-      <ReturnTopButton />
+
     </div>
   );
 }

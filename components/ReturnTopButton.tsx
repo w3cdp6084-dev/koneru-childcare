@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-
+import * as Icon from 'react-feather';
 const ReturnTopButton = () => {
   const [isButtonActive, setIsButtonActive] = useState(false)
 
@@ -40,8 +40,8 @@ const ReturnTopButton = () => {
   const style = isButtonActive ? activeStyle : normalStyle
 
   return (
-    <button style={style} onClick={returnTop}>
-      ボタン
+    <button style={style} onClick={returnTop} className="primary top-button">
+        <Icon.ArrowUp />
     </button>
   )
 }
