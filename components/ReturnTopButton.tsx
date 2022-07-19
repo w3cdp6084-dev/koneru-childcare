@@ -41,7 +41,7 @@ const ReturnTopButton = () => {
 
   return (
     <button style={style} onClick={returnTop} className="primary top-button">
-        <Icon.ArrowUp />
+        <Icon.ArrowUp className='text-white' />
     </button>
   )
 }
