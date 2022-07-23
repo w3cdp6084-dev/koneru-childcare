@@ -14,22 +14,21 @@ export default function Article({ article }: Props) {
   return (
     <div>
       <div className="px-10 py-6 mx-auto relative">
-
         <div className="main-img max-w-6xl px-10 py-6 mx-auto">
         {article.tag && (
-          <div className="flex items-center justify-start mt-4 mb-4">
+          <div className="flex items-center justify-between mt-4 mb-4">
             <div className="px-2 py-1 bg-red-400 text-white rounded-lg text-xs">
               #{article.tag}
             </div>
+            <Moment format="YYYY/MM/DD" className='text-xs font-bold date'>
+              {article.publishedAt}
+            </Moment>
           </div>
         )}
-        <div className='flex items-center justify-between'>
+        <div className='items-center justify-between'>
           <div className="dark:text-white font-bold text-3xl text-black">
               {article.title}
           </div>
-          <Moment format="YYYY/MM/DD" className='text-xs font-bold date'>
-              {article.publishedAt}
-          </Moment>
         </div>
           <img
             className="my-10 rounded-2xl object-cover w-full shadow-sm h-full"

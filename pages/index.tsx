@@ -2,7 +2,6 @@ import { client } from '../libs/client';
 import type { Article } from '../types/article';
 import Moment from 'react-moment'
 import Link from 'next/link';
-import Pickups from 'components/molecules/Pickups';
 type Props = {
   articles: Array<Article>;
 };
@@ -10,9 +9,7 @@ type Props = {
 export default function Home({ articles }: Props) {
   return (
     <>
-      <div>
-        <Pickups />
-      </div>
+      
       <section>
       <h1 className="dark:text-white block-title container mx-auto pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-2xl font-bold">
       Sleep record
