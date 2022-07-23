@@ -2,7 +2,7 @@ import { client } from '../libs/client';
 import type { Article } from '../types/article';
 import Moment from 'react-moment'
 import Link from 'next/link';
-import Pickups from '../components/molecules/Pickups';
+import Pickups from 'components/molecules/Pickups';
 type Props = {
   articles: Array<Article>;
 };
