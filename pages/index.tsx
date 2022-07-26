@@ -11,17 +11,22 @@ type Props = {
 export default function Home({ articles,pickups }: Props) {
   return (
     <>
-        {pickups.map(pickups => (
-        <Link href={`/pickups/${pickups.id}`} passHref>
-          <div className="dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg" key={pickups.id}>
-            <img
-              className="w-full"
-              src={pickups.banner.url}
-              alt="Sunset in the mountains"
-            />
-          </div>
-        </Link>
-        ))}
+      <section>
+        <h1 className="dark:text-white block-title container mx-auto pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-2xl font-bold">Pick up</h1>
+        <div className='container mx-auto pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3'>
+          {pickups.map(pickups => (
+          <Link href={`/pickups/${pickups.id}`} passHref>
+            <div className="dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg" key={pickups.id}>
+              <img
+                className="w-full"
+                src={pickups.banner.url}
+                alt="Sunset in the mountains"
+              />
+            </div>
+          </Link>
+          ))}
+        </div>
+      </section>
       <section>
       <h1 className="dark:text-white block-title container mx-auto pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-2xl font-bold">
       Sleep record
