@@ -2,7 +2,8 @@ import { client } from '../libs/client';
 import type { Article } from '../types/article';
 import Moment from 'react-moment'
 import Link from 'next/link';
-
+import { Carousel } from 'react-responsive-carousel'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 type Props = {
   articles: Array<Article>;
   pickups: Array<Pickups>;
@@ -13,7 +14,9 @@ export default function Home({ articles,pickups }: Props) {
     <>
       <section>
         <h1 className="dark:text-white block-title container mx-auto pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-2xl font-bold">Pick up</h1>
+
         <div className='container mx-auto pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3'>
+        <Carousel>
           {pickups.map(pickups => (
           <Link href={`/pickups/${pickups.id}`} passHref>
             <div className="dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg" key={pickups.id}>
@@ -25,7 +28,9 @@ export default function Home({ articles,pickups }: Props) {
             </div>
           </Link>
           ))}
+        </Carousel>
         </div>
+
       </section>
       <section>
       <h1 className="dark:text-white block-title container mx-auto pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-2xl font-bold">
