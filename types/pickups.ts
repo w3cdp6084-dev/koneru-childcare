@@ -11,4 +11,14 @@ export type Pickups = {
       height: number;
       width: number;
     }
+    eye_catch: {
+      url: string;
+      height: number;
+      width: number;
+    }
+    tag: string;
+     category: {
+      name: string;
+    }
+    toc_visible: string;
   }
