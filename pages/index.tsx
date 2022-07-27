@@ -1,5 +1,6 @@
 import { client } from '../libs/client';
 import type { Article } from '../types/article';
+import type { Pickups } from '../types/pickups';
 import Moment from 'react-moment'
 import Link from 'next/link';
 import { Carousel } from 'react-responsive-carousel'
