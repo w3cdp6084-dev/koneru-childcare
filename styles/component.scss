@@ -82,12 +82,36 @@ body{
     }
 }
 // carousel
-.carousel{
-    .control-dots{
-        display: none;
+.container{
+    .custom{
+        .carousel{
+            .control-dots{
+                display: none;
+            }
+            .carousel-status{
+                display: none;
+            }
+            .control-arrow {
+                width: 2.5rem;
+                height: 2.5rem;
+                background: #FFFFFF;
+                box-shadow: 10px 10px 28px 2px rgb(0 0 0 / 4%);
+                border-radius: 50px;
+                top: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 1;
+            }
+        }
+    }
+.carousel .control-next.control-arrow:before {
+    border-left: 8px solid #505050;
+    }
+.carousel.carousel-slider .control-arrow:hover {
+    background: #ffffff;
     }
 }
-
-.carousel-status{
+.thumbs-wrapper {
     display: none;
 }
