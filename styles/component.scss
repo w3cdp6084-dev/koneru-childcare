@@ -106,7 +106,16 @@ body{
         }
     }
 .carousel .control-next.control-arrow:before {
-    border-left: 8px solid #505050;
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 0px;
+    border-top: solid 2px #505050;
+    border-right: solid 2px #505050;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
     }
 .carousel.carousel-slider .control-arrow:hover {
     background: #ffffff;
