@@ -120,6 +120,18 @@ body{
 .carousel.carousel-slider .control-arrow:hover {
     background: #ffffff;
     }
+.carousel .control-prev.control-arrow:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 0px;
+    border-top: solid 2px #505050;
+    border-right: solid 2px #505050;
+    -ms-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
 }
 .thumbs-wrapper {
     display: none;
