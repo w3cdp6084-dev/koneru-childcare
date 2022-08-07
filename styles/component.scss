@@ -85,9 +85,6 @@ body{
 .container{
     .custom{
         .carousel{
-            .control-dots{
-                display: none;
-            }
             .carousel-status{
                 display: none;
             }
@@ -140,4 +137,7 @@ body{
 // pickUp section
 .pickUp{
     background-color: #F9F6F3;
+}
+.carousel > .slider-wrapper > .slider{
+    width: 33.333%;
 }
