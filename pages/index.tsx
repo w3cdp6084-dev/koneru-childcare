@@ -16,7 +16,7 @@ type Props = {
 export default function Home({ articles,pickups,recommend }: Props) {
   return (
     <div>
-      <section>
+      <section className='dark:bg-gray-800 pickUp'>
         <h1 className="dark:text-white block-title container mx-auto pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-2xl font-bold">Pick up</h1>
         <div className='container mx-auto pt-10 grid'>
         <Carousel showArrows={true} showThumbs={true} className="custom">
@@ -34,7 +34,7 @@ export default function Home({ articles,pickups,recommend }: Props) {
         </Carousel>
         </div>
       </section>
-      
+
       <section>
       <h1 className="dark:text-white block-title container mx-auto pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-2xl font-bold">
       Sleep record
