@@ -18,15 +18,15 @@ export default function Home({ articles,pickups,recommend }: Props) {
     <div>
       <section className='dark:bg-gray-800 pickUp'>
         <h1 className="dark:text-white block-title container mx-auto pt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-2xl font-bold">Pick up</h1>
-        <div className='container mx-auto pt-10 grid'>
+        <div className='container mx-auto pt-10'>
         <Carousel infiniteLoop={true} autoPlay={true} showArrows={true} showThumbs={true} className="custom">
           {pickups.map(pickups => (
           <Link href={`/pickups/${pickups.id}`} passHref>
             <div className="dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg" key={pickups.id}>
               <img
-                className="w-full"
+                className=""
                 src={pickups.banner.url}
-                alt="Sunset in the mountains"
+                alt="thumbnail"
               />
             </div>
           </Link>
