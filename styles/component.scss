@@ -85,21 +85,41 @@ body{
 .container{
     .custom{
         .carousel{
-            .control-arrow {
-                width: 2.5rem;
-                height: 2.5rem;
-                background: #FFFFFF;
-                box-shadow: 10px 10px 28px 2px rgb(0 0 0 / 4%);
-                border-radius: 50px;
-                top: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                opacity: 1;
+            .carousel-status{
+                display: none;
             }
+            
         }
+
     }
-.carousel .control-next.control-arrow:before {
+
+}
+
+.thumbs-wrapper {
+    display: none;
+}
+
+// pickUp section
+.pickUp{
+    background-color: #F9F6F3;
+}
+.carousel > .slider-wrapper > .slider{
+    width: 33.333%;
+}
+.pickUp > .control-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 28px 2px rgb(0 0 0 / 4%);
+    border-radius: 50px;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    
+}
+.pickUp > .custom .control-next .control-arrow:before {
     content: '';
     display: block;
     width: 8px;
@@ -111,10 +131,10 @@ body{
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     }
-.carousel.carousel-slider .control-arrow:hover {
+    .custom .carousel-slider .control-arrow:hover {
     background: #ffffff;
     }
-.carousel .control-prev.control-arrow:before {
+    .custom .control-prev.control-arrow:before {
     content: '';
     display: block;
     width: 8px;
@@ -126,15 +146,16 @@ body{
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
 }
-}
-.thumbs-wrapper {
-    display: none;
-}
-
-// pickUp section
-.pickUp{
-    background-color: #F9F6F3;
-}
-.carousel > .slider-wrapper > .slider{
-    width: 33.333%;
+.custom .control-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 28px 2px rgb(0 0 0 / 4%);
+    border-radius: 50px;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    
 }
