@@ -65,7 +65,7 @@ body{
     color: #505050;
 }
 
-// top-
+// top-button
 .top-button{
     position: fixed;
     right: 10%;
@@ -82,11 +82,50 @@ body{
     }
 }
 // carousel
-.container{
+.pickUp{
     .custom{
         .carousel{
-            .carousel-status{
-                display: none;
+            .control-arrow {
+                width: 2.5rem;
+                height: 2.5rem;
+                background: #FFFFFF;
+                box-shadow: 10px 10px 28px 2px rgb(0 0 0 / 4%);
+                border-radius: 50px;
+                top: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 1;
+                
+            }
+            .control-next.control-arrow:before {
+                content: '';
+                display: block;
+                width: 8px;
+                height: 8px;
+                border: 0px;
+                border-top: solid 2px #505050;
+                border-right: solid 2px #505050;
+                -ms-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                color: #505050;
+            }
+
+            .control-arrow:hover {
+                background: #ffffff;
+            }
+            .control-prev.control-arrow:before {
+                content: '';
+                display: block;
+                width: 8px;
+                height: 8px;
+                border: 0px;
+                border-top: solid 2px #505050;
+                border-right: solid 2px #505050;
+                -ms-transform: rotate(-135deg);
+                -webkit-transform: rotate(-135deg);
+                transform: rotate(-135deg);
             }
             
         }
@@ -105,57 +144,4 @@ body{
 }
 .carousel > .slider-wrapper > .slider{
     width: 33.333%;
-}
-.pickUp > .control-arrow {
-    width: 2.5rem;
-    height: 2.5rem;
-    background: #FFFFFF;
-    box-shadow: 10px 10px 28px 2px rgb(0 0 0 / 4%);
-    border-radius: 50px;
-    top: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
-    
-}
-.custom .control-next .control-arrow:before {
-    content: '';
-    display: block;
-    width: 8px;
-    height: 8px;
-    border: 0px;
-    border-top: solid 2px #505050;
-    border-right: solid 2px #505050;
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    }
-    .custom .carousel-slider .control-arrow:hover {
-    background: #ffffff;
-    }
-    .custom .control-prev.control-arrow:before {
-    content: '';
-    display: block;
-    width: 8px;
-    height: 8px;
-    border: 0px;
-    border-top: solid 2px #505050;
-    border-right: solid 2px #505050;
-    -ms-transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-    transform: rotate(-135deg);
-}
-.custom .control-arrow {
-    width: 2.5rem;
-    height: 2.5rem;
-    background: #FFFFFF;
-    box-shadow: 10px 10px 28px 2px rgb(0 0 0 / 4%);
-    border-radius: 50px;
-    top: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
-    
 }
